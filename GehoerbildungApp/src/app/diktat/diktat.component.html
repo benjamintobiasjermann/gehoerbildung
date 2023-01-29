@@ -1,8 +1,10 @@
-<app-page-header [name]="titel"></app-page-header>
-<div *ngFor="let musik of musikList">
-  <p>{{musik[0]}}</p>
-  <p>{{musik[1]}}</p>
+<div *ngIf="!!diktatData">
+  <app-page-header [name]="diktatData.titel"></app-page-header>
+  <div *ngFor="let musik of diktatData.musikList">
+    <p>{{musik[0]}}</p>
+    <p>{{musik[1]}}</p>
+  </div>
+  <a [routerLink]="diktatData.loesungsLink">
+    Lösung
+  </a>
 </div>
-<a [routerLink]="loesungsLink">
-  Lösung
-</a>

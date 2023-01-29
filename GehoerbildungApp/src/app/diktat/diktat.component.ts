@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { IDiktatData } from './diktat-data.interface';
+import * as diktatJsonData from '../../assets/diktat-data.json';
 
 @Component({
   selector: 'app-diktat',
@@ -7,15 +9,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./diktat.component.scss']
 })
 export class DiktatComponent implements OnInit {
-  public titel: string = '';
-  public musikList: [string,string][] = [];
-  public loesungsLink: string = '';
+  public diktatData: IDiktatData | undefined;
+  private diktatList: { [diktatId: string] : IDiktatData; } = diktatJsonData;
 
   constructor(
     // DikatComponent braucht ActivatedRoute-Funktionalitäten
     private activatedRoute: ActivatedRoute
   ) { }
-  
+
   ngOnInit(): void {
     // Bei jeder Änderung der router parameter muss etwas passieren:
     this.activatedRoute.paramMap.subscribe(paramMap => {
@@ -27,16 +28,7 @@ export class DiktatComponent implements OnInit {
       }
 
       // Daten anhand von DikatId ermitteln:
-      this.setupDiktatContent(diktatId);
+      this.diktatData = this.diktatList[diktatId];
     });
-  }
-
-  private setupDiktatContent(diktatId: string): void {
-    this.titel = `Titel ${diktatId}`;
-    this.musikList = [
-      ['Beispiel1', 'Link1'],
-      ['Beispiel2', 'Link2'],
-    ];
-    this.loesungsLink = '/';
   }
 }

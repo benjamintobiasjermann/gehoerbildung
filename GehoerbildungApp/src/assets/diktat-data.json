@@ -1,0 +1,18 @@
+{
+  "id1": {
+    "titel": "titel1",
+    "musikList": [
+      ["Beispiel1", "Link1"],
+      ["Beispiel2", "Link2"]
+    ],
+    "loesungsLink": "/"
+  },
+  "id2": {
+    "titel": "titel2",
+    "musikList": [
+      ["Beispiel1b", "Link1b"],
+      ["Beispiel2b", "Link2b"]
+    ],
+    "loesungsLink": "/"
+  }
+}
