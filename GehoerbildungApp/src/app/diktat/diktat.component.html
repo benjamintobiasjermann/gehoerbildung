@@ -1,3 +1,12 @@
+<div *ngIf="!diktatData">
+  <app-page-header name="Diktate"></app-page-header>
+  <div *ngFor="let data of diktatDictionary | keyvalue">
+    <a routerLink="/diktate/{{data.key}}">
+      {{data.value.titel}}
+    </a>
+  </div>
+</div>
+
 <div *ngIf="!!diktatData">
   <app-page-header [name]="diktatData.titel"></app-page-header>
   <div *ngFor="let musik of diktatData.musikList">

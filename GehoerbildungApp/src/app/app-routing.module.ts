@@ -7,7 +7,8 @@ import { StartseiteComponent } from './startseite/startseite.component';
 const routes: Routes = [
   { path: '', component: StartseiteComponent, pathMatch: 'full' },
   { path: 'kurse', component: KurseComponent },
-  { path: 'diktat/:diktatId', component: DiktatComponent },
+  { path: 'diktate/:diktatId', component: DiktatComponent },
+  { path: 'diktate', component: DiktatComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
