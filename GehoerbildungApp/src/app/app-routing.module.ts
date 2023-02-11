@@ -17,6 +17,7 @@ import { SatzmodelleComponent } from './satzmodelle/satzmodelle.component';
 import { HoeranalyseComponent } from './hoeranalyse/hoeranalyse.component';
 import { KurseComponent } from './kurse/kurse.component';
 import { StartseiteComponent } from './startseite/startseite.component';
+import { Hd0114HaendelAlcinaVerdiPratiComponent } from './hd0114-haendel-alcina-verdi-prati/hd0114-haendel-alcina-verdi-prati.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'diktate', component: DiktatComponent },
   { path: 'harmonisches-hoeren', component: HarmonischesHoerenComponent},
     {path: 'stufendiktate-leitereigen', component: StufendiktateLeitereigenComponent},
+      {path: 'hd0114-haendel-alcina-verdi-prati', component: Hd0114HaendelAlcinaVerdiPratiComponent},
     {path: 'stufendiktate-v-v', component: StufendiktateVVComponent},
     {path: 'stufendiktate-v-ii', component: StufendiktateVIiComponent},
     {path: 'stufendiktate-v-vi', component: StufendiktateVViComponent},

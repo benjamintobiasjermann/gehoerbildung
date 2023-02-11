@@ -23,6 +23,7 @@ import { StufendiktateVXComponent } from './stufendiktate-v-x/stufendiktate-v-x.
 import { StufendiktateNComponent } from './stufendiktate-n/stufendiktate-n.component';
 import { StufendiktateUeComponent } from './stufendiktate-ue/stufendiktate-ue.component';
 import { StufendiktateVerschiedenesComponent } from './stufendiktate-verschiedenes/stufendiktate-verschiedenes.component';
+import { Hd0114HaendelAlcinaVerdiPratiComponent } from './hd0114-haendel-alcina-verdi-prati/hd0114-haendel-alcina-verdi-prati.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { StufendiktateVerschiedenesComponent } from './stufendiktate-verschieden
     StufendiktateVXComponent,
     StufendiktateNComponent,
     StufendiktateUeComponent,
-    StufendiktateVerschiedenesComponent
+    StufendiktateVerschiedenesComponent,
+    Hd0114HaendelAlcinaVerdiPratiComponent
   ],
   imports: [
     BrowserModule,
