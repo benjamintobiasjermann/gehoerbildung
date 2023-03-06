@@ -1,0 +1,23 @@
+<app-page-header name="HD0215 - Schubert - Schwanengesang: Kriegers Ahnung"></app-page-header>
+<div class="d-flex flex-column align-items-center text-left">
+    <div class="w-75 m-3">
+        Aufgabe: Notieren Sie im folgenden acht-taktigen Beispiel den Bass und die Stufen. Takt 1 ist gegeben:
+    </div>
+    <img
+    src="../assets/HD0215/aufgabe.tif"
+    class="img-thumbnail w-75 m-3"
+    alt="..."
+    />
+    <button type="button" class="btn btn-primary w-75 m-2 p-3" (click)="playSound1()"><span class="bi bi-play-circle-fill"></span> Ganzes Beispiel</button>
+    <button type="button" class="btn btn-primary w-75 m-2 p-3" (click)="playSound2()"><span class="bi bi-play-circle-fill"></span> Takt 1-4</button>
+    <button type="button" class="btn btn-primary w-75 m-2 p-3" (click)="playSound3()"><span class="bi bi-play-circle-fill"></span> Takt 5-8</button>
+    <button class="btn btn-primary w-75 m-2 p-3" (mouseover)="showImage=true" (mouseout)="showImage=false">Lösung</button>
+    <img
+    *ngIf="showImage"
+    src="../assets/HD0215/loesung.tif" class="img-thumbnail" alt="">
+    <button type="button" class="btn btn-primary w-75 m-2 p-3" (click)="playSound4()"><span class="bi bi-play-circle-fill"></span> Hilfestellung: lauter Bass</button>
+    <div class="w-75 m-4">
+        Zusatzaufgabe: Spielen Sie Ihre korrigierte Stufenfolge auf dem Klavier. Die Oberstimme muss nicht der Aufnahme entsprechen. Jedoch sollten Sie Satzfehler vermeiden.
+    </div>
+    <a routerLink = "/stufendiktate-v-v" class="btn btn-primary w-75 m-2 p-3">zurück</a>
+</div>
